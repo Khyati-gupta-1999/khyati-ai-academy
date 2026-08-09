@@ -99,20 +99,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function type() {
     const current = phrases[phraseIndex];
+    const charArray = Array.from(current);
+
     if (isDeleting) {
-      el.textContent = current.slice(0, charIndex--);
+      el.textContent = charArray.slice(0, charIndex--).join('');
     } else {
-      el.textContent = current.slice(0, charIndex++);
+      el.textContent = charArray.slice(0, charIndex++).join('');
     }
 
-    let delay = isDeleting ? 55 : 95;
-    if (!isDeleting && charIndex === current.length + 1) {
+    let delay = isDeleting ? 50 : 95;
+    if (!isDeleting && charIndex === charArray.length + 1) {
       // Pause at end
       el.classList.add('typing-done');
       setTimeout(() => {
         el.classList.remove('typing-done');
         isDeleting = true;
-        setTimeout(type, 1200);
+        setTimeout(type, 1400);
       }, 10);
       return;
     }

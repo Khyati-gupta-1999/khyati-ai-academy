@@ -290,8 +290,8 @@ button { border: none; background: none; cursor: pointer; font-family: var(--fon
   font-size: clamp(2.8rem, 7vw, 5.5rem);
   font-weight: 900;
   color: var(--white);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  line-height: 1.25;
+  letter-spacing: normal;
   margin-bottom: 1rem;
 }
 
@@ -303,7 +303,10 @@ button { border: none; background: none; cursor: pointer; font-family: var(--fon
   background-clip: text;
   animation: gradientShift 4s ease infinite;
   display: inline-block;
-  min-height: 1.1em;
+  min-height: 1.2em;
+  padding: 0.12em 0.35em 0.12em 0.05em;
+  overflow: visible;
+  vertical-align: bottom;
 }
 
 @keyframes gradientShift {
@@ -315,9 +318,11 @@ button { border: none; background: none; cursor: pointer; font-family: var(--fon
 /* Cursor blink for typing */
 .hero-gradient-text::after {
   content: '|';
-  -webkit-text-fill-color: rgba(96,165,250,0.8);
+  -webkit-text-fill-color: rgba(96,165,250,0.95);
   animation: cursorBlink 0.8s infinite;
   font-weight: 300;
+  margin-left: 4px;
+  display: inline-block;
 }
 
 @keyframes cursorBlink {
