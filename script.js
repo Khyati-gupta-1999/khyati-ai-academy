@@ -179,42 +179,56 @@ sections.forEach(sec => sectionObserver.observe(sec));
 function toggleMenu() {
   const navLinksEl = document.getElementById('navLinks');
   const hamburger = document.getElementById('hamburger');
+  if (!navLinksEl || !hamburger) return;
+
   const isOpen = navLinksEl.classList.toggle('open');
-  hamburger.setAttribute('aria-expanded', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 
   const spans = hamburger.querySelectorAll('span');
-  if (isOpen) {
-    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-    spans[1].style.opacity = '0'; spans[1].style.transform = 'scaleX(0)';
-    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-  } else {
-    spans[0].style.transform = '';
-    spans[1].style.opacity = ''; spans[1].style.transform = '';
-    spans[2].style.transform = '';
+  if (spans.length >= 3) {
+    if (isOpen) {
+      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+      spans[1].style.opacity = '0'; spans[1].style.transform = 'scaleX(0)';
+      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      document.body.style.overflow = 'hidden';
+    } else {
+      spans[0].style.transform = '';
+      spans[1].style.opacity = ''; spans[1].style.transform = '';
+      spans[2].style.transform = '';
+      document.body.style.overflow = '';
+    }
   }
 }
 
-// Close menu on nav link click
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    const navLinksEl = document.getElementById('navLinks');
-    const hamburger = document.getElementById('hamburger');
+function closeMenu() {
+  const navLinksEl = document.getElementById('navLinks');
+  const hamburger = document.getElementById('hamburger');
+  if (navLinksEl && navLinksEl.classList.contains('open')) {
     navLinksEl.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', 'false');
-    const spans = hamburger.querySelectorAll('span');
-    spans[0].style.transform = '';
-    spans[1].style.opacity = ''; spans[1].style.transform = '';
-    spans[2].style.transform = '';
+    if (hamburger) {
+      hamburger.setAttribute('aria-expanded', 'false');
+      const spans = hamburger.querySelectorAll('span');
+      if (spans.length >= 3) {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = ''; spans[1].style.transform = '';
+        spans[2].style.transform = '';
+      }
+    }
+    document.body.style.overflow = '';
+  }
+}
+
+// Close menu on any nav link or dropdown link click
+document.querySelectorAll('#navLinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
   });
 });
 
 // Close on outside tap (mobile)
 document.addEventListener('click', (e) => {
-  if (!e.target.closest('.navbar')) {
-    const navLinksEl = document.getElementById('navLinks');
-    if (navLinksEl && navLinksEl.classList.contains('open')) {
-      toggleMenu();
-    }
+  if (!e.target.closest('.navbar') && !e.target.closest('#navLinks')) {
+    closeMenu();
   }
 });
 
