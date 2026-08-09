@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ख्याति स्कॉलर्स अकादमी | AI से अंग्रेज़ी सीखें — Tier 2 &amp; 3 शहरों के लिए</title>
+  <meta name="description" content="ख्याति स्कॉलर्स अकादमी — मालपुरा और Tier 2-3 शहरों के छात्रों के लिए AI-powered अंग्रेज़ी कोचिंग। M.A. Gold Medalist फैकल्टी, बैच 15 छात्र, RBSE बोर्ड में 95%+ परिणाम।">
+  <meta name="keywords" content="AI English coaching, अंग्रेज़ी कोचिंग मालपुरा, ख्याति स्कॉलर्स, Tier 2 city English tutor, RBSE English coaching Rajasthan">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khyatischolars.in/">
+  <meta property="og:title" content="ख्याति स्कॉलर्स | AI से अंग्रेज़ी सीखें">
+  <meta property="og:description" content="मालपुरा और Tier 2-3 शहरों के लिए भारत की पहली AI-powered अंग्रेज़ी कोचिंग अकादमी।">
+  <meta property="og:image" content="images/favicon.png">
+
+  <!-- Local Favicon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="preload">
+
+  <!-- ===================== FLOATING PARTICLES ===================== -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" id="nav-home-link">
+        <img src="images/logo.png" alt="Khyati Scholars Academy Logo" class="nav-logo-img">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"      class="nav-link active" id="nav-link-home">होम</a></li>
+        <li class="nav-dropdown">
+          <a href="#solutions" class="nav-link" id="nav-link-solutions">AI समाधान <span class="chevron">&#9660;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#solutions">AI अंग्रेज़ी ट्यूटरिंग</a></li>
+            <li><a href="#solutions">स्मार्ट मूल्यांकन</a></li>
+            <li><a href="#solutions">व्यक्तिगत शिक्षा</a></li>
+            <li><a href="#solutions">वर्चुअल क्लासरूम</a></li>
+          </ul>
+        </li>
+        <li><a href="#insights"  class="nav-link" id="nav-link-insights">लेख</a></li>
+        <li><a href="#ai-action" class="nav-link" id="nav-link-research">केस स्टडी</a></li>
+        <li><a href="#about"     class="nav-link" id="nav-link-about">हमारे बारे में</a></li>
+        <li><a href="#contact"   class="nav-link" id="nav-link-contact">संपर्क करें</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/918949760116?text=नमस्ते%20ख्याति%20स्कॉलर्स%2C%20मैं%20AI%20अंग्रेज़ी%20कोचिंग%20के%20बारे%20में%20जानना%20चाहता%20हूँ।" target="_blank" class="btn-whatsapp-nav" id="btn-whatsapp-nav">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          फ्री डेमो बुक करें
+        </a>
+        <button class="btn-ai-chat" id="btn-ask-ai" onclick="toggleAIChat()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+          AI से पूछें
+        </button>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="मेनू खोलें">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="images/hero_ai_education.jpg" alt="AI-powered English Education" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="pulse-dot"></span>
+        <span>2026&ndash;27 बैच में अभी प्रवेश लें &mdash; मालपुरा &amp; ऑनलाइन</span>
+      </div>
+      <h1 class="hero-headline">
+        अपना भविष्य बनाएं<br>
+        <span class="hero-gradient-text" id="typingHeadline"></span>
+      </h1>
+      <p class="hero-subtext">
+        भारत की पहली AI-powered अंग्रेज़ी कोचिंग &mdash; Tier&nbsp;2 &amp; Tier&nbsp;3 शहरों के हर छात्र के लिए, जहाँ भी हो वहाँ से, किफायती दाम पर।
+      </p>
+      <div class="hero-cta-row">
+        <a href="https://wa.me/918949760116?text=नमस्ते%20ख्याति%20स्कॉलर्स%2C%20मैं%20फ्री%20डेमो%20बुक%20करना%20चाहता%20हूँ।" target="_blank" class="btn-hero-primary" id="btn-hero-demo">
+          फ्री डेमो बुक करें &nbsp;&#8594;
+        </a>
+        <a href="#solutions" class="btn-hero-outline" id="btn-hero-solutions">AI टूल्स देखें</a>
+      </div>
+      <div class="hero-trust-strip">
+        <div class="trust-chip"><span>&#10003;</span> M.A. Gold Medalist फैकल्टी</div>
+        <div class="trust-chip"><span>&#10003;</span> बैच में अधिकतम 15 छात्र</div>
+        <div class="trust-chip"><span>&#10003;</span> 95%+ बोर्ड परिणाम</div>
+        <div class="trust-chip"><span>&#10003;</span> AI से व्यक्तिगत अध्ययन योजना</div>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="hero-search-bar">
+      <div class="search-tabs">
+        <span class="search-tab active" id="tab-1" onclick="setTab(this)">AI अंग्रेज़ी ट्यूटरिंग</span>
+        <span class="search-tab" id="tab-2" onclick="setTab(this)">स्मार्ट मूल्यांकन</span>
+        <span class="search-tab" id="tab-3" onclick="setTab(this)">Tier 2-3 शहर</span>
+      </div>
+      <div class="search-input-row">
+        <input type="text" id="hero-search-input" placeholder="AI से अंग्रेज़ी सीखने के बारे में कुछ भी पूछें&#8230;" class="hero-search-input" autocomplete="off">
+        <button class="hero-search-btn" id="hero-search-btn" onclick="handleHeroSearch()" aria-label="खोजें">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="hero-mic-btn" id="hero-mic-btn" title="आवाज़ से खोजें" aria-label="Voice search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+        </button>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-chip" onclick="fillSearch(this)">AI से English speaking कैसे सुधारें</span>
+        <span class="suggestion-chip" onclick="fillSearch(this)">RBSE English के लिए AI टूल्स</span>
+        <span class="suggestion-chip" onclick="fillSearch(this)">छोटे शहरों में English coaching</span>
+        <span class="suggestion-chip" onclick="fillSearch(this)">AI grammar correction क्या है</span>
+      </div>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="hero-ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-inner" id="tickerInner">
+          <a href="#insights" class="ticker-item" id="ticker-item-1"><span class="ticker-tag">नया</span><span>AI ट्यूटर से Tier-3 स्कूल के छात्रों के English अंक 38% बढ़े &mdash; मालपुरा पायलट 2026</span><span class="ticker-arrow">&#8594;</span></a>
+          <a href="#insights" class="ticker-item" id="ticker-item-2"><span class="ticker-tag">ट्रेंडिंग</span><span>2026 में Indian Students के English Speaking सुधारने के Top 10 AI टूल्स</span><span class="ticker-arrow">&#8594;</span></a>
+          <a href="#insights" class="ticker-item" id="ticker-item-3"><span class="ticker-tag">शोध</span><span>AI से RBSE Board तैयारी करने वाले छात्र औसतन 20% अधिक अंक लाते हैं &mdash; नई स्टडी</span><span class="ticker-arrow">&#8594;</span></a>
+          <a href="#insights" class="ticker-item" id="ticker-item-4"><span class="ticker-tag">रिपोर्ट</span><span>EdTech AI Index 2026: Tier 2-3 शहर 54% की वृद्धि के साथ सबसे आगे</span><span class="ticker-arrow">&#8594;</span></a>
+          <!-- Duplicate for seamless loop -->
+          <a href="#insights" class="ticker-item" aria-hidden="true"><span class="ticker-tag">नया</span><span>AI ट्यूटर से Tier-3 स्कूल के छात्रों के English अंक 38% बढ़े &mdash; मालपुरा पायलट 2026</span><span class="ticker-arrow">&#8594;</span></a>
+          <a href="#insights" class="ticker-item" aria-hidden="true"><span class="ticker-tag">ट्रेंडिंग</span><span>2026 में Indian Students के English Speaking सुधारने के Top 10 AI टूल्स</span><span class="ticker-arrow">&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TOP STORIES CAROUSEL ===================== -->
+  <section class="top-stories" id="top-stories">
+    <div class="section-header-row">
+      <h2 class="section-label">मुख्य लेख</h2>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="carousel-prev" aria-label="पिछला">&#8249;</button>
+        <span class="carousel-count" id="carousel-count">1 / 4</span>
+        <button class="carousel-btn" id="carousel-next" aria-label="अगला">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="stories-carousel" id="storiesCarousel">
+
+      <div class="story-slide active" id="story-slide-1">
+        <div class="story-featured">
+          <div class="story-img-wrap">
+            <img src="images/article1.jpg" alt="AI English Teaching" class="story-img" loading="eager">
+          </div>
+          <div class="story-text">
+            <span class="story-tag">विशेष</span>
+            <h3 class="story-title">KhyatiAI से मिलें &mdash; वो AI गाइड जो छोटे शहरों के छात्रों को आत्मविश्वास से अंग्रेज़ी सिखाता है</h3>
+            <p class="story-desc">KhyatiAI मालपुरा और हज़ारों Tier&nbsp;2 &amp; Tier&nbsp;3 कस्बों के छात्रों के अंग्रेज़ी सीखने का तरीका बदल रहा है। AI-driven adaptive lessons, real-time grammar correction और हर छात्र की रफ्तार के अनुसार बनाई गई व्यक्तिगत अध्ययन योजना &mdash; सब कुछ एक जगह।</p>
+            <a href="#insights" class="story-link" id="story-link-1">पूरा पढ़ें &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-slide" id="story-slide-2">
+        <div class="story-featured">
+          <div class="story-img-wrap">
+            <img src="images/article2.jpg" alt="AI Personalised Learning" class="story-img" loading="lazy">
+          </div>
+          <div class="story-text">
+            <span class="story-tag">शोध</span>
+            <h3 class="story-title">AI कैसे हर भारतीय छात्र के लिए उसकी अपनी अंग्रेज़ी सीखने की राह बनाता है</h3>
+            <p class="story-desc">Machine Learning से चलने वाले Adaptive AI सिस्टम अब हर छात्र की vocabulary की कमज़ोरी, grammar की गलतियाँ और पढ़ने की रफ्तार को पहचानते हैं &mdash; और हर रोज़ उसके लिए कस्टम अंग्रेज़ी अभ्यास खुद तैयार करते हैं। यह Hindi-medium छात्रों के लिए एक नई शुरुआत है।</p>
+            <a href="#insights" class="story-link" id="story-link-2">पूरा पढ़ें &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-slide" id="story-slide-3">
+        <div class="story-featured">
+          <div class="story-img-wrap">
+            <img src="images/article3.jpg" alt="AI Smart Assessment" class="story-img" loading="lazy">
+          </div>
+          <div class="story-text">
+            <span class="story-tag">नवाचार</span>
+            <h3 class="story-title">AI मूल्यांकन &mdash; सिर्फ नंबर नहीं, असली समझ को परखता है</h3>
+            <p class="story-desc">आधुनिक AI evaluation tools अब English essays में writing style, grammar accuracy, vocabulary diversity और coherence को एक साथ जाँचते हैं &mdash; ख्याति के शिक्षकों को हर छात्र की असली कमज़ोरी पहचानने और बोर्ड परीक्षा से पहले उसे दूर करने में मदद करते हैं।</p>
+            <a href="#insights" class="story-link" id="story-link-3">पूरा पढ़ें &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-slide" id="story-slide-4">
+        <div class="story-featured">
+          <div class="story-img-wrap">
+            <img src="images/article4.jpg" alt="AI Virtual Teaching" class="story-img" loading="lazy">
+          </div>
+          <div class="story-text">
+            <span class="story-tag">EdTech</span>
+            <h3 class="story-title">AI Virtual Assistants छोटे शहरों में अंग्रेज़ी पढ़ाने का तरीका बदल रहे हैं</h3>
+            <p class="story-desc">AI-powered teaching assistants Tier&nbsp;2 के शिक्षकों को वही टूल्स दे रहे हैं जो पहले सिर्फ बड़े शहरों के स्कूलों में थे &mdash; 24/7 English doubt solving, automatic homework correction, और real-time parent progress reports &mdash; सब कुछ एक smartphone से।</p>
+            <a href="#insights" class="story-link" id="story-link-4">पूरा पढ़ें &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CRAFTING INTELLIGENT LEARNING ===================== -->
+  <section class="craft-section" id="solutions">
+    <div class="craft-container">
+      <h2 class="craft-title">बनाएं <em>बेहतरीन</em> अंग्रेज़ी सीखने का अनुभव</h2>
+      <p class="craft-subtitle">चाहे आप RBSE बोर्ड की तैयारी कर रहे मालपुरा के छात्र हों, या किसी Tier&nbsp;3 कस्बे के माता-पिता &mdash; AI आपके बच्चे की अंग्रेज़ी सफलता का सबसे बड़ा साधन है।</p>
+      <a href="#insights" class="btn-primary-outline" id="btn-explore-solutions">AI समाधान देखें &#8594;</a>
+
+      <div class="solutions-grid">
+
+        <div class="solution-card" id="solution-card-1">
+          <div class="sol-card-img">
+            <img src="images/article1.jpg" alt="AI Personalised English Learning">
+            <div class="sol-card-overlay"><span>व्यक्तिगत AI</span></div>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">Adaptive English AI</h3>
+            <p class="sol-card-desc">AI-powered modules जो हर छात्र की grammar की कमज़ोरी, vocabulary की कमी और reading level को real-time में पहचानते हैं &mdash; और हर रोज़ उसके लिए कस्टम English अभ्यास खुद बनाते हैं ताकि हर बच्चा अपनी सही रफ्तार से आगे बढ़े।</p>
+            <a href="#insights" class="sol-card-link" id="sol-link-1">और जानें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="solution-card" id="solution-card-2">
+          <div class="sol-card-img">
+            <img src="images/article2.jpg" alt="AI English Tutoring">
+            <div class="sol-card-overlay"><span>AI ट्यूटरिंग</span></div>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">बुद्धिमान AI ट्यूटर</h3>
+            <p class="sol-card-desc">AI ट्यूटर जो English grammar को हिंदी और English दोनों में समझाता है, 24/7 छात्रों के doubt solve करता है, RBSE के अनुसार practice questions देता है और written &amp; spoken English पर तुरंत feedback देता है।</p>
+            <a href="#insights" class="sol-card-link" id="sol-link-2">और जानें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="solution-card" id="solution-card-3">
+          <div class="sol-card-img">
+            <img src="images/article3.jpg" alt="AI Assessment English">
+            <div class="sol-card-overlay"><span>स्मार्ट मूल्यांकन</span></div>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">AI-Powered मूल्यांकन</h3>
+            <p class="sol-card-desc">Smart evaluation tools जो English essays, reading comprehension और grammar tests को score करते हैं &mdash; हर कमज़ोरी पर detailed feedback देते हैं और ख्याति के शिक्षकों को परीक्षा से पहले targeted intervention plan करने में मदद करते हैं।</p>
+            <a href="#insights" class="sol-card-link" id="sol-link-3">और जानें &#8594;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AI IN ACTION ===================== -->
+  <section class="ai-action-section" id="ai-action">
+    <div class="ai-action-container">
+      <div class="ai-action-header">
+        <h2 class="ai-action-title">AI काम करता है &mdash; Tier 2 &amp; 3 शहरों के असली नतीजे</h2>
+        <p class="ai-action-subtitle">मालपुरा, टोंक, सवाई माधोपुर और राजस्थान के दूसरे छोटे कस्बों के हर छात्र के लिए &mdash; AI-powered English coaching बोर्ड में अंक बढ़ा रही है, बोलने का आत्मविश्वास दे रही है और वो दरवाज़े खोल रही है जो पहले सिर्फ बड़े शहरों के बच्चों के लिए थे।</p>
+      </div>
+
+      <div class="case-studies-grid">
+
+        <div class="case-card" id="case-card-1">
+          <div class="case-img-wrap">
+            <img src="images/article2.jpg" alt="AI English Rural Students">
+            <span class="case-badge">केस स्टडी</span>
+          </div>
+          <div class="case-body">
+            <h4>Tier-3 कस्बे के छात्रों की सफलता</h4>
+            <p>मालपुरा के Class X के छात्रों ने ख्याति की AI-assisted coaching के सिर्फ 3 महीने बाद English बोर्ड में औसतन 22 अंक अधिक लाए। Grammar, essays और comprehension &mdash; सभी में शानदार सुधार।</p>
+            <a href="#insights" class="case-cta" id="case-cta-1">पूरी कहानी पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="case-card" id="case-card-2">
+          <div class="case-img-wrap">
+            <img src="images/article3.jpg" alt="AI Spoken English">
+            <span class="case-badge">केस स्टडी</span>
+          </div>
+          <div class="case-body">
+            <h4>AI से बोलने का आत्मविश्वास</h4>
+            <p>AI speech analysis tools और ख्याति के M.A. Gold Medalist faculty की coaching से enrolled 87% छात्रों की spoken English fluency और pronunciation में एक semester में उल्लेखनीय सुधार आया।</p>
+            <a href="#insights" class="case-cta" id="case-cta-2">पूरी कहानी पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="case-card" id="case-card-3">
+          <div class="case-img-wrap">
+            <img src="images/article4.jpg" alt="AI First Academy Malpura">
+            <span class="case-badge">केस स्टडी</span>
+          </div>
+          <div class="case-body">
+            <h4>मालपुरा की पहली AI English Academy</h4>
+            <p>ख्याति स्कॉलर्स मालपुरा की पहली AI-integrated English coaching model बना रहा है &mdash; certified human expertise और personalised AI tools को मिलाकर metro-quality नतीजे छोटे कस्बे की fees पर।</p>
+            <a href="#insights" class="case-cta" id="case-cta-3">पूरी कहानी पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOMAINS & APPLICATIONS ===================== -->
+  <section class="domains-section" id="domains">
+    <div class="domains-container">
+      <h2 class="domains-title">AI कहाँ-कहाँ बदलता है अंग्रेज़ी सिखाने का तरीका</h2>
+      <p class="domains-subtitle">RBSE बोर्ड की तैयारी से लेकर competitive exams तक, spoken English से creative writing तक &mdash; हर तरह के छात्र के लिए AI solutions।</p>
+      <div class="domains-grid">
+        <div class="domain-pill" id="domain-1"><span>&#128218;</span> RBSE English (1&ndash;12)</div>
+        <div class="domain-pill" id="domain-2"><span>&#127891;</span> Spoken English</div>
+        <div class="domain-pill" id="domain-3"><span>&#128203;</span> Grammar &amp; Writing</div>
+        <div class="domain-pill" id="domain-4"><span>&#128187;</span> Online Classes</div>
+        <div class="domain-pill" id="domain-5"><span>&#129504;</span> English Literature</div>
+        <div class="domain-pill" id="domain-6"><span>&#127758;</span> Competitive Exam English</div>
+        <div class="domain-pill" id="domain-7"><span>&#128202;</span> AI Grammar Correction</div>
+        <div class="domain-pill" id="domain-8"><span>&#128270;</span> Vocabulary Building</div>
+        <div class="domain-pill" id="domain-9"><span>&#127775;</span> IELTS / TOEFL Prep</div>
+        <div class="domain-pill" id="domain-10"><span>&#128241;</span> WhatsApp Learning</div>
+        <div class="domain-pill" id="domain-11"><span>&#127979;</span> School Tutor (सभी विषय)</div>
+        <div class="domain-pill" id="domain-12"><span>&#128161;</span> AI Study Plans</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESEARCH & INSIGHTS ===================== -->
+  <section class="insights-section" id="insights">
+    <div class="insights-container">
+      <div class="insights-header">
+        <h2 class="insights-title">शोध, घोषणाएं<br>&amp; विशेषज्ञ विचार</h2>
+        <p class="insights-subtitle">नवीनतम खबरें, शोध और निर्णय &mdash; जो AI-powered English education को Tier 2 &amp; 3 India में आकार दे रहे हैं।</p>
+      </div>
+
+      <div class="insights-grid">
+
+        <div class="insight-card" id="insight-card-1">
+          <div class="insight-img-wrap">
+            <img src="images/article1.jpg" alt="AI EdTech Summit" class="insight-img">
+          </div>
+          <div class="insight-body">
+            <span class="insight-tag event-tag">कार्यक्रम</span>
+            <h4 class="insight-title-text">ख्याति स्कॉलर्स EdTech AI Summit India 2026 में &mdash; Tier-3 की आवाज़ को मंच पर ले जाना</h4>
+            <p class="insight-meta">10&ndash;12 सितंबर 2026 &nbsp;|&nbsp; जयपुर Convention Centre, Hall 203</p>
+            <p class="insight-desc">ख्याति स्कॉलर्स Lead Knowledge Partner के रूप में इस summit में शामिल होगा &mdash; यह बताने के लिए कि AI tools किस तरह मालपुरा, टोंक और सवाई माधोपुर जैसे छोटे कस्बों और metro cities के बीच English education के अंतर को पाट रहे हैं।</p>
+            <a href="#contact" class="insight-read-more" id="insight-rm-1">और पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="insight-card" id="insight-card-2">
+          <div class="insight-img-wrap">
+            <img src="images/article2.jpg" alt="AI English Ecosystem" class="insight-img">
+          </div>
+          <div class="insight-body">
+            <span class="insight-tag report-tag">रिपोर्ट</span>
+            <h4 class="insight-title-text">Agentic AI: Tier 2&ndash;3 India के लिए Student-Aware English Learning Ecosystems कैसे बनाएं</h4>
+            <p class="insight-desc">एक गहरी रिपोर्ट जो बताती है कि Agentic AI models &mdash; जो खुद छात्र की English कमज़ोरी ढूंढते हैं और targeted exercises assign करते हैं &mdash; राजस्थान के 12 छोटे कस्बों में pilot हो रहे हैं, जहाँ 91% शिक्षक संतुष्ट हैं।</p>
+            <a href="#insights" class="insight-read-more" id="insight-rm-2">और पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="insight-card" id="insight-card-3">
+          <div class="insight-img-wrap">
+            <img src="images/article3.jpg" alt="AI English Results" class="insight-img">
+          </div>
+          <div class="insight-body">
+            <span class="insight-tag insight-tag-blue">विश्लेषण</span>
+            <h4 class="insight-title-text">AI Journal: ख्याति स्कॉलर्स कैसे छोटे शहरों के छात्रों के लिए English mastery को आसान बना रहा है</h4>
+            <p class="insight-desc">हमारे AI-assisted teaching model की गहरी पड़ताल &mdash; कैसे personalised English plans, real-time AI feedback और expert human mentorship मिलकर पहली पीढ़ी के English learners को भी 95%+ बोर्ड नतीजे दे रहे हैं।</p>
+            <a href="#insights" class="insight-read-more" id="insight-rm-3">और पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="insight-card" id="insight-card-4">
+          <div class="insight-img-wrap">
+            <img src="images/article4.jpg" alt="AI Gamified Learning" class="insight-img">
+          </div>
+          <div class="insight-body">
+            <span class="insight-tag innovation-tag">नवाचार</span>
+            <h4 class="insight-title-text">ख्याति AI ने Gamified English Learning शुरू की &mdash; छात्र 3 गुना ज़्यादा Engaged रहते हैं</h4>
+            <p class="insight-desc">AI gamification Tier-3 छात्रों के English सीखने के तजुर्बे को बदल रही है &mdash; grammar drills को interactive challenges में, vocabulary को word-games में और essay writing को instant AI feedback के साथ एक creative adventure में बदल रही है।</p>
+            <a href="#insights" class="insight-read-more" id="insight-rm-4">और पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="insight-card" id="insight-card-5">
+          <div class="insight-img-wrap">
+            <img src="images/article1.jpg" alt="AI Board Results 2026" class="insight-img" loading="lazy">
+          </div>
+          <div class="insight-body">
+            <span class="insight-tag investors-tag">नतीजे</span>
+            <h4 class="insight-title-text">FY27 Q1: ख्याति स्कॉलर्स छात्रों का RBSE English में औसत 78% &mdash; पिछले साल से 22% अधिक</h4>
+            <p class="insight-desc">2026&ndash;27 की पहली तिमाही के नतीजे दिखाते हैं कि RBSE English board scores में 22 अंकों का औसत सुधार आया है &mdash; AI-personalised study plans और हमारे M.A. Gold Medalist faculty की expert coaching से।</p>
+            <a href="#contact" class="insight-read-more" id="insight-rm-5">और पढ़ें &#8594;</a>
+          </div>
+        </div>
+
+        <div class="insight-card" id="insight-card-6">
+          <div class="insight-img-wrap">
+            <img src="images/article4.jpg" alt="AI English Report India" class="insight-img" loading="lazy">
+          </div>
+          <div class="insight-body">
+            <span class="insight-tag report-tag">रिपोर्ट</span>
+            <h4 class="insight-title-text">AI और English Education: Tier 2&ndash;3 India कैसे 2026 की EdTech Revolution का नेतृत्व कर रहा है</h4>
+            <p class="insight-desc">एक गहरा अध्ययन कि AI tools राजस्थान, MP और UP के ग्रामीण और अर्ध-शहरी संस्थानों में English learning ROI को कैसे बदल रहे हैं &mdash; ख्याति स्कॉलर्स एक featured model के रूप में।</p>
+            <a href="#contact" class="insight-read-more" id="insight-rm-6">रिपोर्ट डाउनलोड करें &#8594;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS STRIP ===================== -->
+  <section class="stats-section" id="stats">
+    <div class="stats-container">
+      <div class="stat-item" id="stat-1">
+        <span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">छात्र कोच किए</span>
+        <span class="stat-sub">Tier 2 &amp; 3 शहरों में</span>
+      </div>
+      <div class="stat-item" id="stat-2">
+        <span class="stat-num" data-target="95">0</span><span class="stat-suffix">%+</span>
+        <span class="stat-label">RBSE बोर्ड पास रेट</span>
+        <span class="stat-sub">English Classes IX&ndash;XII</span>
+      </div>
+      <div class="stat-item" id="stat-3">
+        <span class="stat-num" data-target="22">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">औसत अंक सुधार</span>
+        <span class="stat-sub">3 महीने में अंकों की बढ़त</span>
+      </div>
+      <div class="stat-item" id="stat-4">
+        <span class="stat-num" data-target="15">0</span><span class="stat-suffix"></span>
+        <span class="stat-label">अधिकतम छात्र / बैच</span>
+        <span class="stat-sub">व्यक्तिगत ध्यान की गारंटी</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FUTURE WITH KHYATI ===================== -->
+  <section class="future-section" id="about">
+    <div class="future-content">
+      <div class="future-text">
+        <h2 class="future-title">अपना English भविष्य बनाएं<br><span>ख्याति स्कॉलर्स</span> के साथ</h2>
+        <p class="future-desc">
+          हम भारत की अगली पीढ़ी की AI-first English coaching academy हैं &mdash; मालपुरा के हर छात्र के लिए, Tier-3 राजस्थान के हर परिवार के लिए और हर उस learner के लिए जो world-class English education का हकदार है चाहे उसका शहर कितना भी छोटा हो। नेतृत्व M.A. Gold Medalist &amp; B.Ed. Topper का, शक्ति AI की।
+        </p>
+        <div class="future-cta-row">
+          <a href="https://wa.me/918949760116?text=नमस्ते%20ख्याति%20स्कॉलर्स%2C%20मैं%20AI-powered%20English%20coaching%20में%20दाखिला%20लेना%20चाहता%20हूँ।" target="_blank" class="btn-future" id="btn-future-whatsapp">
+            WhatsApp पर Enroll करें &#8594;
+          </a>
+          <a href="#insights" class="btn-future-outline" id="btn-future-insights">लेख पढ़ें</a>
+        </div>
+      </div>
+      <div class="future-img-wrap">
+        <img src="images/career_banner.jpg" alt="AI-Powered English Education Future" class="future-img">
+        <div class="future-badge">
+          <div class="badge-inner">
+            <strong>M.A. Gold Medalist</strong>
+            <span>Faculty Led</span>
+          </div>
+          <div class="badge-ring"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-col" id="footer-col-topics">
+        <h4 class="footer-col-title">विषय</h4>
+        <ul>
+          <li><a href="#insights">AI English Teaching</a></li>
+          <li><a href="#insights">RBSE Board की तैयारी</a></li>
+          <li><a href="#insights">Spoken English AI</a></li>
+          <li><a href="#insights">Grammar &amp; Writing</a></li>
+          <li><a href="#insights">Tier 2-3 EdTech</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" id="footer-col-programs">
+        <h4 class="footer-col-title">कोर्सेज़</h4>
+        <ul>
+          <li><a href="https://khyatischolars.in" target="_blank">Classes 1&ndash;8 (सभी विषय)</a></li>
+          <li><a href="https://khyatischolars.in" target="_blank">General English (IX&ndash;X)</a></li>
+          <li><a href="https://khyatischolars.in" target="_blank">English Literature (XI&ndash;XII)</a></li>
+          <li><a href="https://khyatischolars.in" target="_blank">AI-Powered Demo Session</a></li>
+          <li><a href="https://khyatischolars.in" target="_blank">Online Batch (राजस्थान)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" id="footer-col-company">
+        <h4 class="footer-col-title">हमारे बारे में</h4>
+        <ul>
+          <li><a href="#about">ख्याति स्कॉलर्स के बारे में</a></li>
+          <li><a href="#about">हमारी फैकल्टी</a></li>
+          <li><a href="#about">AI Teaching Method</a></li>
+          <li><a href="#insights">समाचार</a></li>
+          <li><a href="https://khyatischolars.in" target="_blank">Official Website</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" id="footer-col-support">
+        <h4 class="footer-col-title">संपर्क करें</h4>
+        <ul>
+          <li><a href="https://wa.me/918949760116" target="_blank">WhatsApp: +91 89497 60116</a></li>
+          <li><a href="#contact">मालपुरा, राजस्थान, भारत</a></li>
+          <li><a href="https://khyatischolars.in" target="_blank">khyatischolars.in</a></li>
+          <li><a href="#contact">Privacy Policy</a></li>
+          <li><a href="#contact">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <!-- Text logo instead of image to avoid blank box issue -->
+      <div class="footer-brand-text-wrap">
+        <img src="images/favicon.png" alt="" class="footer-favicon-icon">
+        <span class="footer-brand-wordmark">Khyati Scholars <span>Academy</span></span>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://khyatischolars.in" target="_blank" class="social-icon" id="social-web" title="Website" aria-label="Website">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </a>
+        <a href="https://wa.me/918949760116" target="_blank" class="social-icon" id="social-whatsapp" title="WhatsApp" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        </a>
+        <a href="#" class="social-icon" id="social-linkedin" title="LinkedIn" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="social-icon" id="social-twitter" title="X / Twitter" aria-label="X / Twitter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" class="social-icon" id="social-youtube" title="YouTube" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.34z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Khyati Scholars Academy. सर्वाधिकार सुरक्षित। &nbsp;|&nbsp; <a href="https://khyatischolars.in" target="_blank">khyatischolars.in</a> &nbsp;|&nbsp; मालपुरा, राजस्थान</p>
+    </div>
+  </footer>
+
+  <!-- ===================== AI CHAT WIDGET ===================== -->
+  <div class="ai-chat-widget" id="aiChatWidget" role="dialog" aria-label="KhyatiAI Chat">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">
+          <img src="images/favicon.png" alt="KhyatiAI" style="width:100%;height:100%;object-fit:contain;border-radius:50%;">
+        </div>
+        <div>
+          <strong>KhyatiAI</strong>
+          <span class="chat-status">&#9679; Online</span>
+        </div>
+      </div>
+      <button class="chat-close" id="chat-close-btn" onclick="toggleAIChat()" aria-label="बंद करें">&times;</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot-msg">
+        <p>&#128075; नमस्ते! मैं <strong>KhyatiAI</strong> हूँ। AI-powered English coaching, हमारे courses, fees या admission के बारे में कुछ भी पूछें!</p>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="English coaching के बारे में पूछें&#8230;" class="chat-input" autocomplete="off">
+      <button class="chat-send-btn" id="chat-send-btn" onclick="sendChatMessage()" aria-label="भेजें">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating AI Button -->
+  <button class="ai-fab" id="aiFab" onclick="toggleAIChat()" aria-label="KhyatiAI से बात करें" title="KhyatiAI से पूछें">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span class="fab-label">AI से पूछें</span>
+  </button>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="ऊपर जाएं" title="ऊपर जाएं">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
