@@ -1133,8 +1133,8 @@ button { border: none; background: none; cursor: pointer; font-family: var(--fon
   .top-stories { padding: 3rem 1.5rem; }
 }
 
-/* ============ RESPONSIVE — MOBILE 768 ============ */
-@media (max-width: 768px) {
+/* ============ RESPONSIVE — MOBILE & TABLET (1024px) ============ */
+@media (max-width: 1024px) {
   /* Nav Container spacing: logo on left, actions on right */
   .nav-container {
     justify-content: space-between;
