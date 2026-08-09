@@ -412,13 +412,13 @@ const aiData = {
   ai: "हम AI tools का इस्तेमाल करते हैं हर छात्र की English writing analyze करने, grammar patterns पहचानने, targeted vocabulary exercises suggest करने और weekly personalised practice plans बनाने के लिए। समझो यह 24/7 AI-powered English tutor है — हमारे expert faculty के साथ!",
   batch: "हम हर batch में सिर्फ अधिकतम 15 छात्र रखते हैं ताकि हर बच्चे पर individual attention मिले। Batch full होते ही नया खोलते हैं। जल्दी seat book करें!",
   location: "हमारा मुख्य coaching centre मालपुरा, राजस्थान में है। WhatsApp, Zoom और Google Meet पर online classes भी होती हैं — राजस्थान और उससे बाहर के छात्रों के लिए।",
-  hello: "नमस्ते! ख्याति स्कॉलर्स अकादमी में स्वागत है &#128075; मैं KhyatiAI हूँ। AI-powered English coaching, batches, fees या किसी भी चीज़ के बारे में पूछें — हिंदी में!",
-  teacher: "हमारी lead faculty M.A. (English) में Gold Medalist हैं MDS University से (Top 10 rank) और B.Ed. Topper भी। Classes XI &amp; XII में active school teaching का अनुभव है। Expert human mentorship + AI personalisation — दोनों एक साथ!",
+  hello: "नमस्ते! ख्याति मैम स्कॉलर्स अकादमी में स्वागत है &#128075; मैं KhyatiMamAI हूँ। ख्याति मैम की AI-powered English coaching, batches, fees या किसी भी चीज़ के बारे में पूछें — हिंदी में!",
+  teacher: "हमारी lead faculty ख्याति मैम M.A. (English) में Gold Medalist हैं MDS University से (Top 10 rank) और B.Ed. Topper भी। Classes XI &amp; XII में active school teaching का अनुभव है। Expert human mentorship + AI personalisation — दोनों एक साथ!",
   default: [
-    "हमारी AI-powered English programme expert M.A. Gold Medalist faculty और personalised AI study plans को मिलाती है — Tier 2-3 India के हर छात्र को metro-quality English education देती है किफायती fees पर।",
-    "बढ़िया सवाल! ख्याति स्कॉलर्स में AI exactly पहचानता है कि छात्र English में कहाँ struggle कर रहा है — grammar हो, vocabulary हो या comprehension — और उसके लिए रोज़ custom practice plan बनाता है।",
+    "हमारी AI-powered English programme ख्याति मैम (M.A. Gold Medalist faculty) और personalised AI study plans को मिलाती है — Tier 2-3 India के हर छात्र को metro-quality English education देती है किफायती fees पर।",
+    "बढ़िया सवाल! ख्याति मैम स्कॉलर्स में AI exactly पहचानता है कि छात्र English में कहाँ struggle कर रहा है — grammar हो, vocabulary हो या comprehension — और उसके लिए रोज़ custom practice plan बनाता है।",
     "हमने मालपुरा और आसपास के Tier-3 कस्बों के 500+ छात्रों को सिर्फ 3 महीने में RBSE English scores में औसतन 22 अंक सुधारने में मदद की है। क्या आप FREE demo session book करना चाहेंगे?",
-    "ख्याति में AI का मतलब है: 24/7 grammar correction, AI-generated RBSE-aligned practice questions, parents के लिए weekly performance reports, और adaptive difficulty जो छात्र के साथ बढ़ती है — सब Tier-3 city fees पर!",
+    "ख्याति मैम AI का मतलब है: 24/7 grammar correction, AI-generated RBSE-aligned practice questions, parents के लिए weekly performance reports, और adaptive difficulty जो छात्र के साथ बढ़ती है — सब Tier-3 city fees पर!",
   ]
 };
 
