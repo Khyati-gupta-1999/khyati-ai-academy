@@ -407,20 +407,20 @@ function toggleAIChat() {
 }
 
 const aiData = {
-  english: "हमारी AI-powered English coaching में grammar, vocabulary, reading comprehension, essay writing और spoken English शामिल हैं — सब RBSE syllabus के अनुसार Classes 1-12 के लिए। हर छात्र को हर हफ्ते update होने वाला personalised AI study plan मिलता है!",
-  enroll: "Enroll करने के लिए 'फ्री डेमो बुक करें' पर click करें या हमें WhatsApp करें +91 89497 60116 पर। हम 3 FREE demo classes देते हैं, कोई obligation नहीं। हर batch में सिर्फ 15 छात्र होते हैं इसलिए जल्दी seat book करें!",
-  fee: "हमारी fees Tier 2-3 शहरों के परिवारों के हिसाब से affordable और transparent हैं — कोई hidden charge नहीं। Current batch fee के लिए WhatsApp करें +91 89497 60116 पर।",
-  result: "हमारे छात्र लगातार RBSE English board exams में 90%+ लाते हैं। हमारे M.A. Gold Medalist faculty की personalised approach और AI study plans ने 95%+ pass rate दिया है हर साल!",
-  ai: "हम AI tools का इस्तेमाल करते हैं हर छात्र की English writing analyze करने, grammar patterns पहचानने, targeted vocabulary exercises suggest करने और weekly personalised practice plans बनाने के लिए। समझो यह 24/7 AI-powered English tutor है — हमारे expert faculty के साथ!",
-  batch: "हम हर batch में सिर्फ अधिकतम 15 छात्र रखते हैं ताकि हर बच्चे पर individual attention मिले। Batch full होते ही नया खोलते हैं। जल्दी seat book करें!",
-  location: "हमारा मुख्य coaching centre मालपुरा, राजस्थान में है। WhatsApp, Zoom और Google Meet पर online classes भी होती हैं — राजस्थान और उससे बाहर के छात्रों के लिए।",
-  hello: "नमस्ते! ख्याति मैम स्कॉलर्स अकादमी में स्वागत है &#128075; मैं KhyatiMamAI हूँ। ख्याति मैम की AI-powered English coaching, batches, fees या किसी भी चीज़ के बारे में पूछें — हिंदी में!",
-  teacher: "हमारी lead faculty ख्याति मैम M.A. (English) में Gold Medalist हैं MDS University से (Top 10 rank) और B.Ed. Topper भी। Classes XI &amp; XII में active school teaching का अनुभव है। Expert human mentorship + AI personalisation — दोनों एक साथ!",
+  english: "हमारी Atomlink AI-powered English coaching में grammar, vocabulary, reading comprehension, essay writing और spoken English शामिल हैं — सब RBSE syllabus के अनुसार Classes 1-12 के लिए। हर छात्र को हर हफ्ते update होने वाला personalised Atomlink AI study plan मिलता है!",
+  enroll: "Enroll करने के लिए 'फ्री डेमो बुक करें' पर click करें या हमें WhatsApp करें +91 89497 60116 पर। हम 3 FREE demo classes देते हैं, कोई शुल्क नहीं। हर batch में सिर्फ 15 छात्र होते हैं इसलिए जल्दी seat book करें!",
+  fee: "ख्याति स्कॉलर्स अकादमी की फीस छोटे शहरों के परिवारों के अनुकूल और पारदर्शी है — कोई छिपा हुआ शुल्क नहीं। नए बैच की फीस जानने के लिए WhatsApp करें +91 89497 60116 पर।",
+  result: "हमारे छात्र लगातार RBSE English board exams में 90%+ अंक लाते हैं। ख्याति मैम (M.A. Gold Medalist) के मार्गदर्शन और Atomlink AI study plans ने 95%+ बोर्ड परिणाम दिया है!",
+  ai: "हम Atomlink AI टूल्स का इस्तेमाल करते हैं हर छात्र की English writing analyze करने, grammar patterns पहचानने, targeted vocabulary suggest करने और अभ्यास योजना बनाने के लिए। समझो यह 24/7 AI-powered English tutor है — ख्याति मैम और एक्सपर्ट फैकल्टी के साथ!",
+  batch: "ख्याति स्कॉलर्स अकादमी के हर बैच में अधिकतम 15 छात्र होते हैं ताकि हर बच्चे पर व्यक्तिगत ध्यान दिया जा सके। सीमित सीटें उपलब्ध हैं, आज ही अपनी सीट बुक करें!",
+  location: "ख्याति स्कॉलर्स अकादमी का मुख्य सेंटर मालपुरा, राजस्थान में है। साथ ही WhatsApp, Zoom और Google Meet पर online classes भी उपलब्ध हैं — राजस्थान और अन्य राज्यों के छात्रों के लिए।",
+  hello: "नमस्ते! ख्याति स्कॉलर्स अकादमी में स्वागत है &#128075; मैं Atomlink AI हूँ। हमारे AI-powered English courses, batches, fees या दाखिले के बारे में कुछ भी पूछें!",
+  teacher: "हमारी लीड फैकल्टी ख्याति मैम M.A. (English) में Gold Medalist हैं MDS University से (Top 10 rank) और B.Ed. Topper भी। Classes XI &amp; XII में स्कूल टीचिंग का गहरा अनुभव है। Expert human mentorship + Atomlink AI — दोनों एक साथ!",
   default: [
-    "हमारी AI-powered English programme ख्याति मैम (M.A. Gold Medalist faculty) और personalised AI study plans को मिलाती है — Tier 2-3 India के हर छात्र को metro-quality English education देती है किफायती fees पर।",
-    "बढ़िया सवाल! ख्याति मैम स्कॉलर्स में AI exactly पहचानता है कि छात्र English में कहाँ struggle कर रहा है — grammar हो, vocabulary हो या comprehension — और उसके लिए रोज़ custom practice plan बनाता है।",
-    "हमने मालपुरा और आसपास के Tier-3 कस्बों के 500+ छात्रों को सिर्फ 3 महीने में RBSE English scores में औसतन 22 अंक सुधारने में मदद की है। क्या आप FREE demo session book करना चाहेंगे?",
-    "ख्याति मैम AI का मतलब है: 24/7 grammar correction, AI-generated RBSE-aligned practice questions, parents के लिए weekly performance reports, और adaptive difficulty जो छात्र के साथ बढ़ती है — सब Tier-3 city fees पर!",
+    "हमारी AI-powered English कोचिंग ख्याति मैम (M.A. Gold Medalist faculty) के मार्गदर्शन और Atomlink AI स्टडी प्लान्स को जोड़ती है — जिससे हर छात्र को मेट्रो-क्वालिटी अंग्रेज़ी शिक्षा किफायती फीस पर मिलती है।",
+    "बढ़िया सवाल! ख्याति स्कॉलर्स अकादमी में Atomlink AI सटीक रूप से पहचानता है कि छात्र कहाँ संकोच कर रहा है — grammar, vocabulary या comprehension — और उसके लिए रोज़ custom practice plan बनाता है।",
+    "हमने मालपुरा और आसपास के अर्ध-शहरी क्षेत्रों के 500+ छात्रों को सिर्फ 3 महीने में RBSE English बोर्ड परीक्षा में औसतन 22 अंक सुधारने में मदद की है। क्या आप FREE demo session book करना चाहेंगे?",
+    "Atomlink AI का मतलब है: 24/7 grammar correction, AI-generated RBSE practice questions, पेरेंट्स के लिए weekly performance reports, और adaptive difficulty — सब छोटे शहर की किफायती फीस पर!",
   ]
 };
 
